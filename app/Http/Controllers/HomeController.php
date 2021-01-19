@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Dress;
 
 class HomeController extends Controller
 {
@@ -11,6 +12,8 @@ class HomeController extends Controller
     }
 
     public function pagina_vestiti() {
+        $all_dresses = Dress::all();
+        dd($all_dresses);
         return view('pagina_vestiti');
     }
 }
