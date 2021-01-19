@@ -13,7 +13,10 @@ class HomeController extends Controller
 
     public function pagina_vestiti() {
         $all_dresses = Dress::all();
-        dd($all_dresses);
-        return view('pagina_vestiti');
+        // dd($all_dresses);
+        $data = [
+            'all_dresses' => $all_dresses,
+        ];
+        return view('pagina_vestiti', $data);
     }
 }

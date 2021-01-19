@@ -4,7 +4,7 @@ NOME DATO	TIPO DI DATO		ATTRIBUTI		DEFAULT VALUE
 -----------------------------------------------------------------------------
 id
 brand
-type_id (tuta, maglia, ...)
+#type_id (tuta, maglia, ...)
 price
 rating
 
